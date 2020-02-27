@@ -66,7 +66,7 @@ class ApplicationController < Sinatra::Base
 		def logged_in?
 			!!session[:id]
 		end
-		binding.pry
+		#binding.pry
 
 		def current_user
 		User.find(session[:id])
